@@ -3,3 +3,4 @@ import PackageDescription
 let package = Package(name: "GigWorkerSafety")
 // commit step 0
 // commit step 1
+// commit step 2
