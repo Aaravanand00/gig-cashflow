@@ -7,3 +7,4 @@ let package = Package(name: "GigWorkerSafety")
 // commit step 3
 // commit step 4
 // commit step 5
+// commit step 6
