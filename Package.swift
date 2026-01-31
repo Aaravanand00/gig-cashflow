@@ -1,114 +1,34 @@
 // swift-tools-version: 5.9
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
 import PackageDescription
-let package = Package(name: "GigWorkerSafety")
-// commit step 0
-// commit step 1
-// commit step 2
-// commit step 3
-// commit step 4
-// commit step 5
-// commit step 6
-// commit step 7
-// commit step 8
-// commit step 9
-// commit step 10
-// commit step 11
-// commit step 12
-// commit step 13
-// commit step 14
-// commit step 15
-// commit step 16
-// commit step 17
-// commit step 18
-// commit step 19
-// commit step 20
-// commit step 21
-// commit step 22
-// commit step 23
-// commit step 24
-// commit step 25
-// commit step 26
-// commit step 27
-// commit step 28
-// commit step 29
-// commit step 30
-// commit step 31
-// commit step 32
-// commit step 33
-// commit step 34
-// commit step 35
-// commit step 36
-// commit step 37
-// commit step 38
-// commit step 39
-// commit step 40
-// commit step 41
-// commit step 42
-// commit step 43
-// commit step 44
-// commit step 45
-// commit step 46
-// commit step 47
-// commit step 48
-// commit step 49
-// commit step 50
-// commit step 51
-// commit step 52
-// commit step 53
-// commit step 54
-// commit step 55
-// commit step 56
-// commit step 57
-// commit step 58
-// commit step 59
-// commit step 60
-// commit step 61
-// commit step 62
-// commit step 63
-// commit step 64
-// commit step 65
-// commit step 66
-// commit step 67
-// commit step 68
-// commit step 69
-// commit step 70
-// commit step 71
-// commit step 72
-// commit step 73
-// commit step 74
-// commit step 75
-// commit step 76
-// commit step 77
-// commit step 78
-// commit step 79
-// commit step 80
-// commit step 81
-// commit step 82
-// commit step 83
-// commit step 84
-// commit step 85
-// commit step 86
-// commit step 87
-// commit step 88
-// commit step 89
-// commit step 90
-// commit step 91
-// commit step 92
-// commit step 93
-// commit step 94
-// commit step 95
-// commit step 96
-// commit step 97
-// commit step 98
-// commit step 99
-// commit step 100
-// commit step 101
-// commit step 102
-// commit step 103
-// commit step 104
-// commit step 105
-// commit step 106
-// commit step 107
-// commit step 108
-// commit step 109
-// commit step 110
+
+let package = Package(
+    name: "GigWorkerSafety",
+    platforms: [
+        .iOS(.v17),
+        .macOS(.v14)
+    ],
+    products: [
+        .library(
+            name: "GigWorkerSafety",
+            targets: ["GigWorkerSafetyApp"]
+        ),
+    ],
+    dependencies: [
+        // Standard Apple SwiftUI, SwiftData, and Charts frameworks
+    ],
+    targets: [
+        .target(
+            name: "GigWorkerSafetyApp",
+            dependencies: [],
+            path: "Sources/GigWorkerSafetyApp"
+        ),
+        .testTarget(
+            name: "GigWorkerSafetyAppTests",
+            dependencies: ["GigWorkerSafetyApp"],
+            path: "Tests/GigWorkerSafetyAppTests"
+        ),
+    ]
+)
+// commit step 111
